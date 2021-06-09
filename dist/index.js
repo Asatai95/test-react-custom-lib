@@ -29,9 +29,9 @@ const ReactCustomTextField = () => {
         setStatus(true);
     };
     return (react_1.default.createElement(react_1.default.Fragment, null,
-        react_1.default.createElement(core_1.Box, null,
+        react_1.default.createElement(core_1.Box, { width: "300px", display: "flex", alignItems: "center", justifyContent: "space-around" },
             react_1.default.createElement(core_1.TextField, { style: { background: "white" }, variant: "outlined", type: "text", defaultValue: "\u30C6\u30B9\u30C8", onChange: (e) => setText(e.target.value) }),
-            react_1.default.createElement(core_1.Button, { variant: "contained", color: "primary", onClick: handleClick }, "\u9001\u4FE1")),
+            react_1.default.createElement(core_1.Button, { style: { height: 50 }, variant: "contained", color: "primary", onClick: handleClick }, "\u9001\u4FE1")),
         react_1.default.createElement(core_1.Box, null,
             react_1.default.createElement(core_1.Typography, null, status && text))));
 };

@@ -11,7 +11,7 @@ export const ReactCustomTextField = () => {
 
     return (
         <>
-            <Box>
+            <Box width="300px" display="flex" alignItems="center" justifyContent="space-around">
                 <TextField
                     style={{background: "white"}}
                     variant="outlined"
@@ -19,7 +19,7 @@ export const ReactCustomTextField = () => {
                     defaultValue="テスト"
                     onChange={(e) => setText(e.target.value)}
                 />
-                <Button variant="contained" color="primary" onClick={handleClick}>送信</Button>
+                <Button style={{height: 50}} variant="contained" color="primary" onClick={handleClick}>送信</Button>
             </Box>
             <Box>
                 <Typography>
